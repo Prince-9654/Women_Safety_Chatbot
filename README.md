@@ -1,94 +1,67 @@
-# Women Safety Support Chatbot
+# 🛡️ Women Safety Support Chatbot
 
-An AI-powered women safety support chatbot that uses Natural Language Processing (NLP) and Machine Learning to understand safety-related messages and classify them into different categories.
+An AI-powered women safety support chatbot built using **Python, Natural Language Processing (NLP), Machine Learning, and Flask**.
 
-## Features
+The chatbot analyzes a user's message and classifies it into different safety-related categories. Based on the detected category, it provides an appropriate safety response and risk level.
 
-- Classifies user messages into safety-related categories
-- Provides a risk level for each category
-- Provides safety guidance based on the detected category
-- Supports English and Hinglish-style messages
-- Uses a local Machine Learning model
-- Provides emergency support information
-- Includes a separate test dataset for model evaluation
-- Web-based interface using Flask
+---
 
-## Safety Categories
+## 📌 Project Overview
 
-The chatbot supports the following categories:
+The Women Safety Support Chatbot is designed to provide quick initial support when a user describes a potentially unsafe situation.
 
-1. Stalking
-2. Online Threat
-3. Domestic Violence
-4. Harassment
-5. Physical Danger
-6. Emergency Help
-7. General Support
+The system uses a Machine Learning text classification model to understand the user's message and classify it into one of seven categories:
 
-## Machine Learning
+- Stalking
+- Online Threat
+- Domestic Violence
+- Harassment
+- Physical Danger
+- Emergency Help
+- General Support
 
-The chatbot uses:
+The chatbot then generates a category-specific response containing safety guidance.
 
-- TF-IDF Vectorization
-- Unigram and bigram features
-- Logistic Regression classifier
-- Natural Language Processing with NLTK
-- Scikit-learn
+> ⚠️ This project is intended as an educational/support system and should not replace emergency services or professional assistance.
 
-The model is trained locally using a dataset of 972 training sentences.
+---
 
-## Dataset
+## ✨ Features
 
-### Training Dataset
+- 🤖 Machine Learning based text classification
+- 💬 Natural Language Processing for user messages
+- 🚨 Seven safety-related categories
+- 🔴 Risk-level based responses
+- 🌐 Flask web application
+- 🇬🇧 English and Hinglish-style input support
+- 📞 Emergency support information
+- 📍 Location-sharing support in the web interface
+- 📊 Model evaluation using accuracy, precision, recall and F1-score
+- 🧪 Separate test dataset for evaluation
 
-Total training sentences:
+---
 
-**972**
+## 🧠 Machine Learning Model
 
-The dataset contains examples belonging to seven safety categories.
+The project uses:
 
-The training dataset is balanced according to the category-specific sentence counts used by the project.
+- **TF-IDF (Term Frequency-Inverse Document Frequency)** for converting text into numerical features
+- **N-gram features** with unigram and bigram support
+- **Logistic Regression** for text classification
 
-### Test Dataset
-
-A separate test dataset containing **28 sentences** is used to evaluate the model on examples that are not part of the training dataset.
-
-## Model Evaluation
-
-### Training Evaluation
-
-Training accuracy:
-
-**96.09%**
-
-### Test Evaluation
-
-Test accuracy:
-
-**96.43%**
-
-The separate test dataset is important because it provides an evaluation using sentences that were not used during model training.
-
-## Technologies Used
-
-- Python
-- Flask
-- Scikit-learn
-- NLTK
-- HTML
-- CSS
-- JavaScript
-
-## Project Structure
+### Machine Learning Pipeline
 
 ```text
-Women_Safety_Chatbot/
-│
-├── app.py
-├── chatbot.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-│
-└── templates/
-    └── index.html
+User Message
+     ↓
+Text Input
+     ↓
+TF-IDF Vectorization
+     ↓
+Logistic Regression
+     ↓
+Category Prediction
+     ↓
+Risk Level
+     ↓
+Safety Response
