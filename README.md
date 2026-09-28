@@ -44,6 +44,35 @@ The chatbot then generates a category-specific response containing safety guidan
 
 ---
 
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+    git clone https://github.com/Prince-9654/Women_Safety_Chatbot.git
+    cd Women_Safety_Chatbot
+
+### 2. Install required dependencies
+
+    pip install -r requirements.txt
+
+### 3. Run the application
+
+    python app.py
+
+### 4. Open the chatbot
+
+After the Flask server starts, open your browser and visit:
+
+    http://127.0.0.1:5000
+
+### 5. Stop the application
+
+To stop the Flask server, press:
+
+    Ctrl + C
+
+
+
 ## 🧠 Machine Learning Model
 
 The project uses:
