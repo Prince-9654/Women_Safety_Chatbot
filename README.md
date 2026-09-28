@@ -25,6 +25,9 @@ The chatbot then generates a category-specific response containing safety guidan
 > ⚠️ This project is intended as an educational/support system and should not replace emergency services or professional assistance.
 
 ---
+## Demo
+
+![Women Safety Chatbot Demo](screenshots/chatbot-demo.png)
 
 ## ✨ Features
 
