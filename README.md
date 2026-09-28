@@ -25,6 +25,7 @@ The chatbot then generates a category-specific response containing safety guidan
 > ⚠️ This project is intended as an educational/support system and should not replace emergency services or professional assistance.
 
 ---
+
 ## Demo
 
 ![Women Safety Chatbot Demo](screenshots/chatbot-demo.png)
@@ -71,6 +72,7 @@ To stop the Flask server, press:
 
     Ctrl + C
 
+---
 
 ## 📁 Project Structure
 
@@ -88,9 +90,7 @@ Women_Safety_Chatbot/
 │
 └── screenshots/
     └── chatbot-demo.png
-
-
-
+```
 
 ## 🧠 Machine Learning Model
 
@@ -99,6 +99,18 @@ The project uses:
 - **TF-IDF (Term Frequency-Inverse Document Frequency)** for converting text into numerical features
 - **N-gram features** with unigram and bigram support
 - **Logistic Regression** for text classification
+
+### Supported Categories
+
+The model classifies user messages into the following safety-related categories:
+
+- Domestic Violence
+- Emergency Help
+- General Support
+- Harassment
+- Online Threat
+- Physical Danger
+- Stalking
 
 ### Machine Learning Pipeline
 
@@ -116,3 +128,28 @@ Category Prediction
 Risk Level
      ↓
 Safety Response
+```
+
+---
+
+## 📊 Model Performance
+
+The chatbot uses a machine learning-based text classification model to identify different types of safety-related situations.
+
+### Test Accuracy
+
+**96.43%**
+
+### Classification Report
+
+| Category | Precision | Recall | F1-Score |
+|---|---:|---:|---:|
+| Domestic Violence | 1.00 | 1.00 | 1.00 |
+| Emergency Help | 1.00 | 0.75 | 0.86 |
+| General Support | 0.80 | 1.00 | 0.89 |
+| Harassment | 1.00 | 1.00 | 1.00 |
+| Online Threat | 1.00 | 1.00 | 1.00 |
+| Physical Danger | 1.00 | 1.00 | 1.00 |
+| Stalking | 1.00 | 1.00 | 1.00 |
+
+The model was evaluated on a separate test dataset containing **28 test samples**.
