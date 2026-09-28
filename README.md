@@ -72,6 +72,25 @@ To stop the Flask server, press:
     Ctrl + C
 
 
+## 📁 Project Structure
+
+```text
+Women_Safety_Chatbot/
+│
+├── app.py
+├── chatbot.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+│
+├── templates/
+│   └── index.html
+│
+└── screenshots/
+    └── chatbot-demo.png
+
+
+
 
 ## 🧠 Machine Learning Model
 
