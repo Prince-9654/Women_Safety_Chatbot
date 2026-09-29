@@ -26,7 +26,13 @@ The chatbot then generates a category-specific response containing safety guidan
 
 ---
 
-## Demo
+## 🌐 Live Demo
+
+You can try the deployed chatbot here:
+
+**[Open Women Safety Support Chatbot](https://women-safety-support-chatbot.onrender.com)**
+
+## 📸 Demo
 
 ![Women Safety Chatbot Demo](screenshots/chatbot-demo.png)
 
