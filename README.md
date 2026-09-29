@@ -51,6 +51,33 @@ You can try the deployed chatbot here:
 
 ---
 
+## 🛠️ Tech Stack
+
+### Programming Language
+- **Python**
+
+### Backend
+- **Flask** — Web application framework
+
+### Machine Learning & NLP
+- **Scikit-learn** — Machine Learning algorithms
+- **TF-IDF** — Text feature extraction
+- **N-grams** — Unigram and bigram text features
+- **Logistic Regression** — Text classification
+
+### Frontend
+- **HTML**
+- **CSS**
+- **JavaScript**
+
+### Deployment
+- **Render** — Cloud deployment
+- **Gunicorn** — Production WSGI server
+
+### Version Control
+- **Git**
+- **GitHub**
+
 ## ⚙️ Installation
 
 ### 1. Clone the repository
