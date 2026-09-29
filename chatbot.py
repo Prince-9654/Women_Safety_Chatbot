@@ -585,6 +585,43 @@ harassment_sentences = [
     'koi mujhe akela nahi chhod raha hai',
     'koi baar baar mere paas aa raha hai',
     'koi baar baar mujhe disturb kar raha hai',
+    "I am being harassed",
+"someone is harassing me",
+"someone keeps harassing me",
+"I am being harassed online",
+"someone is harassing me online",
+"someone keeps bothering me online",
+"someone is repeatedly bothering me",
+"someone keeps making me uncomfortable",
+"someone keeps disturbing me",
+"someone is bothering me on social media",
+"someone keeps sending me unwanted messages",
+"someone keeps commenting on my posts",
+"someone is making unwanted comments online",
+"someone keeps contacting me even after I asked them to stop",
+"someone keeps messaging me even though I don't want them to",
+"someone is repeatedly disturbing me online",
+"I feel uncomfortable because someone keeps contacting me",
+"someone keeps targeting me online",
+"someone keeps bothering me through social media",
+"I am receiving unwanted messages",
+
+"koi mujhe pareshan kar raha hai",
+"koi mujhe baar baar pareshan karta hai",
+"koi mujhe online pareshan kar raha hai",
+"koi mujhe social media par pareshan karta hai",
+"koi mujhe baar baar message karta hai",
+"koi mujhe unwanted messages bhej raha hai",
+"koi mujhe online baar baar contact karta hai",
+"koi mujhe uncomfortable feel karata hai",
+"koi mujhe baar baar disturb karta hai",
+"koi mujhe social media par disturb karta hai",
+"koi mujhe online tang kar raha hai",
+"koi mujhe baar baar tang karta hai",
+"koi meri posts par unwanted comments karta hai",
+"koi mujhe message karke pareshan karta hai",
+"someone is harassing me online",
+
 ]
 
 physical_danger_sentences = [
@@ -706,6 +743,21 @@ physical_danger_sentences = [
     'koi mujhe physically harm karna chahta hai',
     'koi mujhe nuksan pahunchana chahta hai',
     'koi mujhe pakadne aur hurt karne ki koshish kar raha hai',
+    "I am being harassed",
+"someone is harassing me",
+"someone keeps harassing me",
+"I am being harassed online",
+"someone is harassing me online",
+"someone keeps bothering me online",
+"someone is repeatedly bothering me",
+"someone keeps sending me unwanted messages",
+"someone is making unwanted comments about me online",
+"someone keeps disturbing me on social media",
+"someone is repeatedly making me uncomfortable online",
+"koi mujhe online pareshan kar raha hai",
+"koi mujhe social media par pareshan karta hai",
+
+
 ]
 
 emergency_help_sentences = [
@@ -1245,7 +1297,7 @@ def get_response(user_message):
 
     prediction = model.classes_[probabilities.argmax()]
 
-    # Debug information disabled for production
+    # Temporary prediction debug is off
 
     # If confidence is too low AND prediction is not general support
     if max_probability < 0.30 and prediction != "general_support":

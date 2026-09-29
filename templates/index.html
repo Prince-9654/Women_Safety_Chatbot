@@ -2129,6 +2129,30 @@ function shareLocation() {
 
     }
 
+    const contactName =
+        localStorage.getItem(
+            "trustedContactName"
+        );
+
+    const contactNumber =
+        localStorage.getItem(
+            "trustedContactNumber"
+        );
+
+
+    if (
+        !contactName ||
+        !contactNumber
+    ) {
+
+        alert(
+            "Please save a trusted contact first."
+        );
+
+        return;
+
+    }
+
 
     navigator.geolocation.getCurrentPosition(
 
@@ -2183,10 +2207,45 @@ function shareLocation() {
 
                 "🗺️ Open Location on Map" +
 
-                "</a>",
+                "</a>" +
+
+                "<br><br>" +
+
+                "📱 Preparing WhatsApp location sharing with " +
+                contactName +
+                "...",
 
                 "bot"
 
+            );
+
+
+            const message =
+
+                "🚨 Women Safety Alert\n\n" +
+
+                "I may need help. Please check my current location:\n\n" +
+
+                mapLink;
+
+
+            const cleanNumber =
+
+                contactNumber
+                .replace(/\D/g, "");
+
+
+            const whatsappLink =
+
+                "https://wa.me/" +
+                cleanNumber +
+                "?text=" +
+                encodeURIComponent(message);
+
+
+            window.open(
+                whatsappLink,
+                "_blank"
             );
 
         },
@@ -2207,7 +2266,6 @@ function shareLocation() {
     );
 
 }
-
 
 /* =========================
    INCIDENT REPORT
