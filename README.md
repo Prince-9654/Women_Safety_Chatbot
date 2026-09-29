@@ -165,6 +165,22 @@ Safety Response
 ```
 
 ---
+## ⚠️ Limitations
+
+- The chatbot is designed as an educational and initial-support system.
+- Machine Learning predictions may not always be correct.
+- The chatbot may misclassify some messages, especially when the wording is ambiguous or different from the training examples.
+- The system currently supports English and Hinglish-style text input.
+- Location sharing depends on browser permissions and device support.
+- Emergency actions such as calling 112 should be used when immediate emergency assistance is required.
+- The chatbot does not replace emergency services, law enforcement, medical professionals, counselors, or other qualified assistance.
+
+## 🛡️ Safety Disclaimer
+
+This project is intended for educational and demonstration purposes.
+
+In an actual emergency, contact the appropriate emergency services or a trusted person. Do not rely solely on the chatbot for emergency assistance.
+
 
 ## 📊 Model Performance
 
